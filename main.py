@@ -164,7 +164,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter Your Name or send `n` for use default**")
+    await editable.edit("**Enter Your Name or send `1` for use default**")
 
     # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
@@ -177,7 +177,7 @@ async def account_login(bot: Client, m: Message):
 
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'n':
+    if raw_text3 == '1':
         CR = '@Nikhil_saini_khe'
     elif raw_text3:
         CR = raw_text3
@@ -248,19 +248,6 @@ async def account_login(bot: Client, m: Message):
                 print(key)
                 await m.reply_text(f"got keys form api : \n`{key}`")
 
-           
-            if "/master.mpd" in url :
-                if "https://static.pw.live/" in url:
-                    url = url.replace("https://static.pw.live/","https://d1d34p8vz63oiq.cloudfront.net/")
-                    print(url)
-                else: 
-                    url = url    
-
-                print("mpd check")
-                key = await helper.get_drm_keys(url)
-                print(key)
-                await m.reply_text(f"got keys form api : \n`{key}`")
-
             
         
             if "/master.mpd" in url:
@@ -289,7 +276,7 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} Sanju.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} 🥀 saini.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                 cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} saini.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                     
                 
