@@ -66,7 +66,7 @@ def hrt(seconds, precision = 0):
 
 timer = Timer()
 
-# designed by Kshitij
+# designed by NIKHIL 
 async def progress_bar(current, total, reply, start):
     if timer.can_send():
         now = time.time()
@@ -89,7 +89,7 @@ async def progress_bar(current, total, reply, start):
             
             #don't even change anything till here
             # Calculate progress bar dots
-            #ab mila dil ko sukun #by Kshitij
+            #ab mila dil ko sukun #by NIKHIL 
             #change from here if you want 
             bar_length = 11
             completed_length = int(current * bar_length / total)
@@ -98,7 +98,7 @@ async def progress_bar(current, total, reply, start):
             
             try:
                 await reply.edit(f'`╭──⌈📤 𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 📤⌋──╮ \n├{progress_bar}\n├ 𝙎𝙥𝙚𝙚𝙙 : {sp} \n├ 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨 : {perc} \n├ 𝙇𝙤𝙖𝙙𝙚𝙙 : {cur}\n├ 𝙎𝙞𝙯𝙚 :  {tot} \n├ 𝙀𝙏𝘼 : {eta} \n╰────⌈ Moni🩷 ⌋────╯`\n') 
-         #       await reply.edit(f'`╭──⌈📤 𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 📤⌋──╮ \n├{progress_bar}\n├ 𝙎𝙥𝙚𝙚𝙙 : {sp} \n├ 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨 : {perc} \n├ 𝙇𝙤𝙖𝙙𝙚𝙙 : {cur}\n├ 𝙎𝙞𝙯𝙚 :  {tot} \n├ 𝙀𝙏𝘼 : {eta} \n╰─⌈ Bot Made By Sanjay Kagra ⌋─╯`\n') 
+         #       await reply.edit(f'`╭──⌈📤 𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 📤⌋──╮ \n├{progress_bar}\n├ 𝙎𝙥𝙚𝙚𝙙 : {sp} \n├ 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨 : {perc} \n├ 𝙇𝙤𝙖𝙙𝙚𝙙 : {cur}\n├ 𝙎𝙞𝙯𝙚 :  {tot} \n├ 𝙀𝙏𝘼 : {eta} \n╰─⌈ Bot Made By NIKHIL SAINI⌋─╯`\n') 
             except FloodWait as e:
                 time.sleep(e.x)
 
