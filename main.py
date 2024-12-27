@@ -77,14 +77,14 @@ async def main():
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       "𝐇𝐞𝐥𝐥𝐨 ❤️\n\n◆〓◆ ❖ Sanjay Kagra ❖ ™ ◆〓◆\n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /Moni Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+       "𝐇𝐞𝐥𝐥𝐨 ❤️\n\n◆〓◆ ❖ NIKHIL SAINI❖ ™ ◆〓◆\n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me ⟰ /saini Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/StudyMateIndia4") ],
+                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/nklbotbackup") ],
                     [
-                    InlineKeyboardButton("✜ SanjayKagra86🩷 ✜" ,url="https://t.me/SanjayKagra86") ],
+                    InlineKeyboardButton("✜ NIKHIL SAINI✜" ,url="https://t.me/Nikhil_saini_khe") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/SSC_Aspirants_7") ]                               
+                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://www.instagram.com/nikhil.saini.khe") ]                               
             ]))
 
 @bot.on_message(filters.command(["stop"]))
@@ -94,7 +94,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["Moni"]))
+@bot.on_message(filters.command(["saini"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐀 𝐓𝐱𝐭 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐇𝐞𝐫𝐞 ⏍')
     input: Message = await bot.listen(editable.chat.id)
@@ -131,7 +131,7 @@ async def account_login(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
     
-    await editable.edit("**Enter Batch Name or send d for grabing from text filename.**")
+    await editable.edit("**Enter Batch Name or send FREE BATCH for grabing from text filename.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -164,7 +164,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter Your Name or send `de` for use default**")
+    await editable.edit("**Enter Your Name or send `n` for use default**")
 
     # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
@@ -177,8 +177,8 @@ async def account_login(bot: Client, m: Message):
 
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'de':
-        CR = '@SanjayKagra86🩷'
+    if raw_text3 == 'n':
+        CR = '@Nikhil_saini_khe'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -275,7 +275,7 @@ async def account_login(bot: Client, m: Message):
             try:  
                 
                 cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} Sanju.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} Moni.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} saini.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                     
                 
                 if "drive" in url:
@@ -331,7 +331,7 @@ async def account_login(bot: Client, m: Message):
                           
                 else:
                     Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`"
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By SanjaKagra86🩷 **")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By NIKHIL SAINI**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
