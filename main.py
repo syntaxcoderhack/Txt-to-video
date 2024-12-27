@@ -87,9 +87,9 @@ async def account_login(bot: Client, m: Message):
                     InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://www.instagram.com/nikhil.saini.khe") ]                               
             ]))
 
-@bot.on_message(filters.command(["stop"]))
+@bot.on_message(filters.command(["Stop"]))
 async def restart_handler(_, m):
-    await m.reply_text("♦ 𝐒𝐭𝐨𝐩𝐩𝐞𝐭 ♦", True)
+    await m.reply_text("**💕𝑺𝒕𝒐𝒑𝒑𝒆𝒅 𝑩𝒂𝒃𝒆💕**", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -247,7 +247,22 @@ async def account_login(bot: Client, m: Message):
                 key = await helper.get_drm_keys(url)
                 print(key)
                 await m.reply_text(f"got keys form api : \n`{key}`")
-          
+
+           
+            if "/master.mpd" in url :
+                if "https://static.pw.live/" in url:
+                    url = url.replace("https://static.pw.live/","https://d1d34p8vz63oiq.cloudfront.net/")
+                    print(url)
+                else: 
+                    url = url    
+
+                print("mpd check")
+                key = await helper.get_drm_keys(url)
+                print(key)
+                await m.reply_text(f"got keys form api : \n`{key}`")
+
+            
+        
             if "/master.mpd" in url:
                 cmd= f" yt-dlp -k --allow-unplayable-formats -f bestvideo.{quality} --fixup never {url} "
                 print("counted")
