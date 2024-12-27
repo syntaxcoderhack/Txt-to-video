@@ -41,7 +41,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("https://text-leech-bot-for-render.onrender.com/")
+    return web.json_response("https://causal-vallie-telegmail-dca8e42b.koyeb.app/")
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
@@ -77,24 +77,24 @@ async def main():
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       "नमस्ते दोस्तों\n\n◆〓◆ ❖ जय श्री krishna ❖ ™ ◆〓◆\n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /Moni Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+       "I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me ⟰ /saini Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 🥱✜" ,url=f"https://t.me/+Dhw6oglyO6s2Yjhl") ],
+                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 Group 🥱✜" ,url=f"https://t.me/nklbotbackup") ],
                     [
-                    InlineKeyboardButton("✜ uchihaclan78 ✜" ,url="https://t.me/+Dhw6oglyO6s2Yjhl") ],
+                    InlineKeyboardButton("✜ NIKHIL SAINI ✜" ,url="https://t.me/Nikhil_saini_khe") ],
                     [
-                    InlineKeyboardButton("discussion channel🌲" ,url="https://t.me/+Dhw6oglyO6s2Yjhl") ]                               
+                    InlineKeyboardButton("FOLLOW " ,url="https://www.instagram.com/nikhil.saini.khe") ]                               
             ]))
 
 @bot.on_message(filters.command(["stop"]))
 async def restart_handler(_, m):
-    await m.reply_text("♦ 𝐒𝐭𝐨𝐩𝐩𝐞𝐭 ♦", True)
+    await m.reply_text("♦ 𝐒𝐭𝐨𝐩ped Baby💞 ♦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["Moni"]))
+@bot.on_message(filters.command(["saini"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐀 𝐓𝐱𝐭 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐇𝐞𝐫𝐞 ⏍')
     input: Message = await bot.listen(editable.chat.id)
@@ -131,11 +131,11 @@ async def account_login(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
     
-    await editable.edit("**Enter Batch Name or send d for grabing from text filename.**")
+    await editable.edit("**Enter Batch Name or send FREE BATCH for grabing from text filename.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == 'd':
+    if raw_text0 == 'FREE BATCH':
         b_name = file_name
     else:
         b_name = raw_text0
@@ -164,7 +164,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter Your Name or send `de` for use default**")
+    await editable.edit("**Enter Your Name or send `1` for use default**")
 
     # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
@@ -176,9 +176,9 @@ async def account_login(bot: Client, m: Message):
     await input3.delete(True)
 
     # Default credit message
-    credit = "️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'de':
-        CR = '@arjun🕊️'
+    credit = "️@Nikhil_saini_khe 🕊️⁪⁬⁮⁮⁮"
+    if raw_text3 == '1':
+        CR = '@Nikhil_saini_khe 🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -274,8 +274,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} uchiha.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} uchiha.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} 🥀 NIKHIL.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} SAINI.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                     
                 
                 if "drive" in url:
@@ -331,7 +331,7 @@ async def account_login(bot: Client, m: Message):
                           
                 else:
                     Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`"
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By ArjunThakur **")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By NIKHIL SAINI**")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -347,7 +347,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🔰Sampann Hua🔰")
+    await m.reply_text("🔰DONE BABY💞🔰")
 
 
 
