@@ -111,7 +111,7 @@ async def upload(bot: Client, m: Message):
        content = content.split("\n")
        links = [i]
        for i in content:
-           links.append(i.split("://", i))
+           links.append(i.split("://", 1))
        os.remove(x)
             # print(len(links)
     except:
@@ -201,10 +201,10 @@ async def upload(bot: Client, m: Message):
     try:
         # Assuming links is a list of lists and you want to process the second element of each sublist
         for i in range(len(links)):
-            original_url = links[i][i]
+            original_url = links[i][1]
 
             # Replace parts of the URL as needed
-            V = links[i][i].replace("file/d/","uc?export=download&id=")\
+            V = links[i][1].replace("file/d/","uc?export=download&id=")\
                .replace("www.youtube-nocookie.com/embed", "youtu.be")\
                .replace("?modestbranding=1", "")\
                .replace("/view?usp=sharing","")\
