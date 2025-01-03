@@ -85,7 +85,7 @@ async def account_login(bot: Client, m: Message):
                     InlineKeyboardButton("✜ NIKHIL SAINI ✜" ,url="https://t.me/Nikhil_saini_khe") ],
                     [
                     InlineKeyboardButton("FOLLOW " ,url="https://www.instagram.com/nikhil.saini.khe") ]                               
-            ])))
+            ]))
 
 @bot.on_message(filters.command(["stop"]))
 async def restart_handler(_, m):
