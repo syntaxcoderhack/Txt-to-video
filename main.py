@@ -323,8 +323,6 @@ async def upload(bot: Client, m: Message):
                         await asyncio.sleep(4)  # You can replace this with more specific
                         continue
 
-                    finally:
-                        count += 1  # Increment the count regardless of success or failure
                         
                           
                 else:
