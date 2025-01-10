@@ -73,11 +73,28 @@ async def main():
             await bot.polling()  # Run forever, or until interrupted
     except (KeyboardInterrupt, SystemExit):
         await stop_bot()
-    
+
+# Image URLs for the random image feature
+image_urls = [
+    "https://tinypic.host/images/2025/01/10/Purvi-Cid.th.jpeg",
+    # Add more image URLs as needed
+]
+
 @bot.on_message(filters.command(["start"]))
-async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(
-       "I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me ⟰ /saini Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+async def start_command(bot: Client, message: Message):
+    # Send a loading message
+    loading_message = await bot.send_message(
+        chat_id=message.chat.id,
+        text="Loading... ⏳🔄"
+    )
+  
+    # Choose a random image URL
+    random_image_url = random.choice(image_urls)
+    
+    # Caption for the image
+    caption = (
+        "**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!**\n\n"
+        "I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me ⟰ /saini Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 Group 🥱✜" ,url=f"https://t.me/+taZCy5OkoMUwNzI9") ],
