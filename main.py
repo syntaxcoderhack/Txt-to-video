@@ -125,11 +125,11 @@ async def upload(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
     
-    await editable.edit("**Enter Batch Name or send FREE BATCH for grabing from text filename.**")
+    await editable.edit("**Enter Batch Name or send 1 for grabing from text filename.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == 'FREE BATCH':
+    if raw_text0 == '1':
         b_name = file_name
     else:
         b_name = raw_text0
